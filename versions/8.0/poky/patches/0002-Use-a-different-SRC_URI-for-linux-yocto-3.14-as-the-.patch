@@ -1,0 +1,26 @@
+From 8f6a39c89026ba4a77db26687e075ac58f43179f Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 17:50:05 +0100
+Subject: [PATCH 2/2] Use a different SRC_URI for linux-yocto-3.14 as the
+ default doesn't work here?!?
+
+---
+ meta/recipes-kernel/linux/linux-yocto_3.14.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta/recipes-kernel/linux/linux-yocto_3.14.bb b/meta/recipes-kernel/linux/linux-yocto_3.14.bb
+index 706cb7c..c0df1d8 100644
+--- a/meta/recipes-kernel/linux/linux-yocto_3.14.bb
++++ b/meta/recipes-kernel/linux/linux-yocto_3.14.bb
+@@ -19,7 +19,7 @@ SRCREV_machine_qemumips64 ?= "737272b1dfd361d9ea19812a9717e2798e3c4576"
+ SRCREV_machine ?= "02120556b0ebc20c30374ccf211e8e4ceac2bb1c"
+ SRCREV_meta ?= "a227f20eff056e511d504b2e490f3774ab260d6f"
+ 
+-SRC_URI = "git://git.yoctoproject.org/linux-yocto-3.14.git;bareclone=1;branch=${KBRANCH},${KMETA};name=machine,meta"
++SRC_URI = "git://github.com/akuster/linux-yocto-3.14.git;bareclone=1;branch=${KBRANCH},${KMETA};name=machine,meta;protocol=http"
+ 
+ LINUX_VERSION ?= "3.14.24"
+ 
+-- 
+2.1.4
+

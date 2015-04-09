@@ -1,0 +1,25 @@
+From 7f9f611069e1fd3fe3cfb477f468eaa2ce9c6d52 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:47:54 +0100
+Subject: [PATCH 6/9] Set protocol for persistence-client-library
+
+---
+ .../persistence-client-library/persistence-client-library_git.bb        | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta-ivi/recipes-extended/persistence-client-library/persistence-client-library_git.bb b/meta-ivi/recipes-extended/persistence-client-library/persistence-client-library_git.bb
+index 181e3d6..1fa86a3 100644
+--- a/meta-ivi/recipes-extended/persistence-client-library/persistence-client-library_git.bb
++++ b/meta-ivi/recipes-extended/persistence-client-library/persistence-client-library_git.bb
+@@ -11,7 +11,7 @@ DEPENDS = "dlt-daemon dbus libcheck persistence-common-object"
+ 
+ PV = "7.0+git${SRCPV}"
+ 
+-SRC_URI = "git://git.projects.genivi.org/persistence/persistence-client-library.git"
++SRC_URI = "git://git.projects.genivi.org/persistence/persistence-client-library.git;protocol=http"
+ SRCREV  = "441b3ce710ec6b7f1e6360cdf29e5c4243af9f1e"
+ S = "${WORKDIR}/git"
+ 
+-- 
+2.1.4
+

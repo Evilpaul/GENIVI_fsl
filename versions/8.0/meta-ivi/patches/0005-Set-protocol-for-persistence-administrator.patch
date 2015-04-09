@@ -1,0 +1,25 @@
+From f16a10310fbba857c069834918bfe93f4b7ff251 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:47:38 +0100
+Subject: [PATCH 5/9] Set protocol for persistence-administrator
+
+---
+ .../persistence-administrator/persistence-administrator_git.bb          | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta-ivi/recipes-extended/persistence-administrator/persistence-administrator_git.bb b/meta-ivi/recipes-extended/persistence-administrator/persistence-administrator_git.bb
+index df9a9bd..96d41a5 100644
+--- a/meta-ivi/recipes-extended/persistence-administrator/persistence-administrator_git.bb
++++ b/meta-ivi/recipes-extended/persistence-administrator/persistence-administrator_git.bb
+@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=815ca599c9df247a0c7f619bab123dad"
+ 
+ PV = "7.0+git${SRCPV}"
+ 
+-SRC_URI = "git://git.projects.genivi.org/persistence/persistence-administrator.git \
++SRC_URI = "git://git.projects.genivi.org/persistence/persistence-administrator.git;protocol=http \
+           file://libsystemd_daemon.patch \
+           "
+ 
+-- 
+2.1.4
+

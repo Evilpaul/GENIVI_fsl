@@ -1,0 +1,35 @@
+From 6f57152077698c510e7cd843d9219a5dcfa35859 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 17:49:05 +0100
+Subject: [PATCH 1/2] Get libarchive direct from a git repository to avoid
+ proxy detecting virus false-positives
+
+---
+ meta/recipes-extended/libarchive/libarchive_3.1.2.bb | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/meta/recipes-extended/libarchive/libarchive_3.1.2.bb b/meta/recipes-extended/libarchive/libarchive_3.1.2.bb
+index 96e2d50..011cb32 100644
+--- a/meta/recipes-extended/libarchive/libarchive_3.1.2.bb
++++ b/meta/recipes-extended/libarchive/libarchive_3.1.2.bb
+@@ -29,7 +29,7 @@ PACKAGECONFIG[expat] = "--with-expat,--without-expat,expat,"
+ PACKAGECONFIG[lzo] = "--with-lzo2,--without-lzo2,lzo,"
+ PACKAGECONFIG[nettle] = "--with-nettle,--without-nettle,nettle,"
+ 
+-SRC_URI = "http://libarchive.org/downloads/libarchive-${PV}.tar.gz \
++SRC_URI = "git://github.com/libarchive/libarchive.git;protocol=http;tag=v3.1.2; \
+            file://libarchive-CVE-2013-0211.patch \
+            file://pkgconfig.patch \
+            "
+@@ -37,6 +37,8 @@ SRC_URI = "http://libarchive.org/downloads/libarchive-${PV}.tar.gz \
+ SRC_URI[md5sum] = "efad5a503f66329bb9d2f4308b5de98a"
+ SRC_URI[sha256sum] = "eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e"
+ 
++S = "${WORKDIR}/git"
++
+ inherit autotools-brokensep lib_package pkgconfig
+ 
+ CPPFLAGS += "-I${WORKDIR}/extra-includes"
+-- 
+2.1.4
+

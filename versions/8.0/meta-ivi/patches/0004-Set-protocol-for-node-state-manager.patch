@@ -1,0 +1,25 @@
+From c2162129507ccabb83e187883bedb2f35a9deb96 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:47:19 +0100
+Subject: [PATCH 4/9] Set protocol for node-state-manager
+
+---
+ .../recipes-extended/node-state-manager/node-state-manager_2.0.0.bb     | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta-ivi/recipes-extended/node-state-manager/node-state-manager_2.0.0.bb b/meta-ivi/recipes-extended/node-state-manager/node-state-manager_2.0.0.bb
+index e137535..0473425 100644
+--- a/meta-ivi/recipes-extended/node-state-manager/node-state-manager_2.0.0.bb
++++ b/meta-ivi/recipes-extended/node-state-manager/node-state-manager_2.0.0.bb
+@@ -13,7 +13,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=815ca599c9df247a0c7f619bab123dad"
+ 
+ SRCREV = "dd4a86b9459537d2e85489b36abf80f34d12f098"
+ 
+-SRC_URI = "git://git.projects.genivi.org/lifecycle/node-state-manager.git \
++SRC_URI = "git://git.projects.genivi.org/lifecycle/node-state-manager.git;protocol=http \
+            file://nsm-fix-systemd-service-dep.patch \
+            file://nsm-fix-no-libsystemd-daemon.patch \
+           "
+-- 
+2.1.4
+

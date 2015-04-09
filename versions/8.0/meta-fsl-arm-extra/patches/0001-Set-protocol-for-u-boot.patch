@@ -1,0 +1,25 @@
+From 3a4890d984ff1cad8448e9495405a9b26d3a4b2a Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:53:22 +0100
+Subject: [PATCH 1/2] Set protocol for u-boot
+
+---
+ recipes-bsp/u-boot/u-boot-script-boundary_git.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-bsp/u-boot/u-boot-script-boundary_git.bb b/recipes-bsp/u-boot/u-boot-script-boundary_git.bb
+index e4f4d40..3790093 100644
+--- a/recipes-bsp/u-boot/u-boot-script-boundary_git.bb
++++ b/recipes-bsp/u-boot/u-boot-script-boundary_git.bb
+@@ -6,7 +6,7 @@ PV = "v2014.07+git${SRCPV}"
+ 
+ SRCREV = "fcb04d6103e2a1f62d3ae197432559aee5621765"
+ SRCBRANCH = "v2014.07-20140914"
+-SRC_URI = "git://github.com/boundarydevices/u-boot-imx6.git;branch=${SRCBRANCH}"
++SRC_URI = "git://github.com/boundarydevices/u-boot-imx6.git;branch=${SRCBRANCH};protocol=http"
+ 
+ S = "${WORKDIR}/git"
+ 
+-- 
+2.1.4
+
