@@ -1,0 +1,8 @@
+build
+meta-fsl-arm
+meta-fsl-arm-extra
+meta-fsl-ivi
+meta-ivi
+meta-openembedded
+meta-qt5
+poky
