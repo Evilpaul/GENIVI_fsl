@@ -7,5 +7,4 @@ meta-openembedded
 meta-qt5
 poky
 
-!versions/*/meta-*
-!versions/*/poky
+!versions/*/*
