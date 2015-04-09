@@ -61,7 +61,7 @@ else
 fi
 
 # loop for all elements
-for element in $(eval echo "{0..${#SRC_NAME[@]}}")
+for element in $(eval echo "{0..$((${#SRC_NAME[@]} - 1))}")
 do
 	# Check if repository already exists
 	if [ -d "$BASE_DIR/${SRC_NAME[$element]}" ]; then
@@ -71,21 +71,21 @@ do
 
 	# Clone repository
 	echo "Cloning ${SRC_NAME[$element]} from (${SRC_URI[$element]})"
-	git clone "${SRC_URI[$element]}" "${SRC_NAME[$element]}"
+	git clone -q ${SRC_URI[$element]} ${SRC_NAME[$element]}
 
 	# Check if repository has been cloned
 	if [ -d "$BASE_DIR/${SRC_NAME[$element]}" ]; then
-		cd "$BASE_DIR/${SRC_NAME[$element]}"
+		cd $BASE_DIR/${SRC_NAME[$element]}
 
 		# Checkout the required revision
 		echo "Checking out revision ${SRC_REV[$element]}"
-		git checkout "${SRC_REV[$element]}"
+		git checkout -q ${SRC_REV[$element]}
 
 		# Check if any patches need to be applied
 		if [ -d "$BASE_DIR/patches/$VERSION/${SRC_NAME[$element]}" ]; then
 			# Apply patches
 			echo "Applying patches to ${SRC_NAME[$element]}"
-			git am "$BASE_DIR/patches/$VERSION/${SRC_NAME[$element]}/*.patch"
+			git am -q $BASE_DIR/patches/$VERSION/${SRC_NAME[$element]}/*.patch
 		fi
 
 		cd "$BASE_DIR"
