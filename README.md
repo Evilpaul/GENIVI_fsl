@@ -2,33 +2,20 @@ Layer dependencies
 =====================================================
 
 URI: http://git.yoctoproject.org/git/poky
-branch: dizzy
-revision: 9fc095a439c36014c73b3a8f240afba09fe0e4d7
 
 URI: http://git.yoctoproject.org/git/meta-fsl-arm
-branch: dizzy
-revision: 64752fbb49b16cad881a7b4d35fef3f8315a673f
 
 URI: http://git.yoctoproject.org/git/meta-ivi
-branch: 7.0
-revision: 054f6ca8f17c2387d45049db5ac9450efe2f787b
 
 URI: https://github.com/meta-qt5/meta-qt5.git
-branch: dizzy
-revision: 1cec680ca9bcd00caaede8fa3d0ff3a4317550dc
 
 URI: https://github.com/openembedded/meta-oe.git
-branch: dizzy
-revision: 9efaed99125b1c4324663d9a1b2d3319c74e7278
 
 URI: https://github.com/Freescale/meta-fsl-ivi.git
-branch: 7.0
-revision: 671bcd8e588b0b1ee011184c08af834ac0bed616
 
 URI: https://github.com/Freescale/meta-fsl-arm-extra.git
-branch: dizzy
-revision: 373e77941ba9fc094b8a3fe56265972a4b76b9de
 
+See versions.txt for release revisions
 
 
 Build Genivi 7.0.3 p1 with Wayland IVI Extension
