@@ -41,8 +41,9 @@ export TEMPLATECONF=/full/path/to/meta-ivi/meta-ivi/conf
 
 	source poky/oe-init-build-env
 
-3. Add meta-fsl-ivi layer dependency paths to COREBASE/build/conf/bblayers.conf
-   in BBLAYERS variable.
+3. Add meta-fsl-arm, meta-fsl-arm-extra, meta-fsl-ivi and meta-qt5 layer
+   dependency paths to COREBASE/build/conf/bblayers.conf in BBLAYERS
+   variable.
 
 4. Set MACHINE ?= "imx6qsabrelite" in COREBASE/build/conf/local.conf
 
