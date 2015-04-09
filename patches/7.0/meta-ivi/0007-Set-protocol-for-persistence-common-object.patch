@@ -1,0 +1,25 @@
+From dbfe06c30aba19345a7242ab31b7b553a36c3c91 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:48:12 +0100
+Subject: [PATCH 7/9] Set protocol for persistence-common-object
+
+---
+ .../persistence-common-object/persistence-common-object_7.0.bb          | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta-ivi/recipes-extended/persistence-common-object/persistence-common-object_7.0.bb b/meta-ivi/recipes-extended/persistence-common-object/persistence-common-object_7.0.bb
+index 299438d..9a9e9ae 100644
+--- a/meta-ivi/recipes-extended/persistence-common-object/persistence-common-object_7.0.bb
++++ b/meta-ivi/recipes-extended/persistence-common-object/persistence-common-object_7.0.bb
+@@ -6,7 +6,7 @@ SECTION = "base"
+ LICENSE = "MPLv2"
+ LIC_FILES_CHKSUM = "file://COPYING;md5=815ca599c9df247a0c7f619bab123dad"
+ 
+-SRC_URI = "git://git.projects.genivi.org/persistence/persistence-common-object.git;tag=${PV} \
++SRC_URI = "git://git.projects.genivi.org/persistence/persistence-common-object.git;tag=${PV};protocol=http \
+            file://configure.ac-fix-typo.patch \
+            file://B251_typedef_uint64_t.patch \
+           "
+-- 
+2.1.4
+

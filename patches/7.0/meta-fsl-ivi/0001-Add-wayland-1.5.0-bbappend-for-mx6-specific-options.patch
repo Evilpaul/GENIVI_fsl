@@ -1,0 +1,20 @@
+From fac9c9c959e021a7d7c6f8a5f23611438eb96561 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:51:43 +0100
+Subject: [PATCH] Add wayland 1.5.0 bbappend for mx6 specific options
+
+---
+ recipes-graphics/wayland/weston_1.5.0.bbappend | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 recipes-graphics/wayland/weston_1.5.0.bbappend
+
+diff --git a/recipes-graphics/wayland/weston_1.5.0.bbappend b/recipes-graphics/wayland/weston_1.5.0.bbappend
+new file mode 100644
+index 0000000..c6c3b82
+--- /dev/null
++++ b/recipes-graphics/wayland/weston_1.5.0.bbappend
+@@ -0,0 +1 @@
++RDEPENDS_${PN}_remove_mx6 = " libegl-gallium "
+-- 
+2.1.4
+

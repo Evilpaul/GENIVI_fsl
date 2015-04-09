@@ -1,0 +1,25 @@
+From 071866fc89e0e449704b2670ebb6d65c4a918174 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:53:40 +0100
+Subject: [PATCH 2/2] Set protocol for linux-imx6
+
+---
+ recipes-kernel/linux/linux-boundary_3.10.17.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-kernel/linux/linux-boundary_3.10.17.bb b/recipes-kernel/linux/linux-boundary_3.10.17.bb
+index 3316937..76fd062 100644
+--- a/recipes-kernel/linux/linux-boundary_3.10.17.bb
++++ b/recipes-kernel/linux/linux-boundary_3.10.17.bb
+@@ -6,7 +6,7 @@ require recipes-kernel/linux/linux-dtb.inc
+ 
+ SUMMARY = "Linux kernel for Boundary Devices boards"
+ 
+-SRC_URI = "git://github.com/boundarydevices/linux-imx6.git;branch=${SRCBRANCH} \
++SRC_URI = "git://github.com/boundarydevices/linux-imx6.git;branch=${SRCBRANCH};protocol=http \
+            file://defconfig"
+ 
+ LOCALVERSION = "-1.0.2_ga+yocto"
+-- 
+2.1.4
+

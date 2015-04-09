@@ -1,0 +1,25 @@
+From cd21a06762bfa48261a9feabb52d198868021efe Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 9 Apr 2015 10:48:30 +0100
+Subject: [PATCH 8/9] Set protocol for wayland-ivi-extension
+
+---
+ meta-ivi/recipes-graphics/wayland/wayland-ivi-extension_1.2.0.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta-ivi/recipes-graphics/wayland/wayland-ivi-extension_1.2.0.bb b/meta-ivi/recipes-graphics/wayland/wayland-ivi-extension_1.2.0.bb
+index fdc7c50..8f9740e 100644
+--- a/meta-ivi/recipes-graphics/wayland/wayland-ivi-extension_1.2.0.bb
++++ b/meta-ivi/recipes-graphics/wayland/wayland-ivi-extension_1.2.0.bb
+@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=176cedb32f48dd58f07e0c1c717b3ea4"
+ 
+ DEPENDS = "weston"
+ 
+-SRC_URI = "git://git.projects.genivi.org/wayland-ivi-extension.git \
++SRC_URI = "git://git.projects.genivi.org/wayland-ivi-extension.git;protocol=http \
+            file://use_sysroot_dir.patch \
+            file://fix_compositor_include.patch \
+           "
+-- 
+2.1.4
+
