@@ -1,21 +1,7 @@
 Layer dependencies
 =====================================================
 
-URI: http://git.yoctoproject.org/git/poky
-
-URI: http://git.yoctoproject.org/git/meta-fsl-arm
-
-URI: http://git.yoctoproject.org/git/meta-ivi
-
-URI: https://github.com/meta-qt5/meta-qt5.git
-
-URI: https://github.com/openembedded/meta-oe.git
-
-URI: https://github.com/Freescale/meta-fsl-ivi.git
-
-URI: https://github.com/Freescale/meta-fsl-arm-extra.git
-
-See versions.txt for release revisions
+See versions/<release>/<layer>
 
 
 Build Genivi 7.0.3 p1 with Wayland IVI Extension

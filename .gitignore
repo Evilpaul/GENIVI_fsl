@@ -6,6 +6,3 @@ meta-ivi
 meta-openembedded
 meta-qt5
 poky
-
-!patches
-!*.patch
