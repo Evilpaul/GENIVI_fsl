@@ -51,8 +51,8 @@ do
 	git clone -q $SRC_URI $repo
 
 	# Check if repository has been cloned
-	if [ -d "$BASE_DIR/$element" ]; then
-		cd $BASE_DIR/$element
+	if [ -d "$BASE_DIR/$repo" ]; then
+		cd $BASE_DIR/$repo
 
 		# Checkout the required revision
 		echo "Checking out revision $SRC_REV"
@@ -61,7 +61,7 @@ do
 		# Check if any patches need to be applied
 		if [ -d "$BASE_DIR/versions/$VERSION/$repo/patches" ]; then
 			# Apply patches
-			echo "Applying patches to $element"
+			echo "Applying patches to $repo"
 			git am -q $BASE_DIR/versions/$VERSION/$repo/patches/*.patch
 		fi
 
