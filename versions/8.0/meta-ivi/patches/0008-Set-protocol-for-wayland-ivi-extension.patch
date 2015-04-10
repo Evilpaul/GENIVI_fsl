@@ -1,7 +1,7 @@
-From cd21a06762bfa48261a9feabb52d198868021efe Mon Sep 17 00:00:00 2001
+From 1abefc05cc09ab40d7bb0ddd6977bf0e44da8b2d Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:48:30 +0100
-Subject: [PATCH 8/9] Set protocol for wayland-ivi-extension
+Subject: [PATCH 08/10] Set protocol for wayland-ivi-extension
 
 ---
  meta-ivi/recipes-graphics/wayland/wayland-ivi-extension_1.2.0.bb | 2 +-

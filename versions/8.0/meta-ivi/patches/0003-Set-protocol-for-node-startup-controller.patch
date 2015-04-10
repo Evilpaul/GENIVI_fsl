@@ -1,7 +1,7 @@
-From 97cff40f76100cb9869ea0f8277b9048427bd1a1 Mon Sep 17 00:00:00 2001
+From f8f86121f27e938ad66daa71bfa14faa110297a3 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:47:06 +0100
-Subject: [PATCH 3/9] Set protocol for node-startup-controller
+Subject: [PATCH 03/10] Set protocol for node-startup-controller
 
 ---
  .../node-startup-controller/node-startup-controller_1.0.2.bb            | 2 +-

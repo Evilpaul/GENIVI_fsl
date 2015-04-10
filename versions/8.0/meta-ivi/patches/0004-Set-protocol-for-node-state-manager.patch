@@ -1,7 +1,7 @@
-From c2162129507ccabb83e187883bedb2f35a9deb96 Mon Sep 17 00:00:00 2001
+From e9d7e891dd5c78343b8d58ce2767e00a0db6d5eb Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:47:19 +0100
-Subject: [PATCH 4/9] Set protocol for node-state-manager
+Subject: [PATCH 04/10] Set protocol for node-state-manager
 
 ---
  .../recipes-extended/node-state-manager/node-state-manager_2.0.0.bb     | 2 +-
