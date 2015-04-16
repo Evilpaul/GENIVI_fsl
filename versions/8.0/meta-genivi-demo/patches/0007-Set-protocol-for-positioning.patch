@@ -1,7 +1,7 @@
-From 5bf17c4f2c435384688bbfe4c1f1d69f7ad204d8 Mon Sep 17 00:00:00 2001
+From 981746a0d37835bdeca0592168e35a98aa52ce6a Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:40:22 +0100
-Subject: [PATCH 7/7] Set protocol for positioning
+Subject: [PATCH 7/8] Set protocol for positioning
 
 ---
  recipes-navigation/positioning/positioning_git.bb | 2 +-

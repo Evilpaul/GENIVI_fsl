@@ -1,7 +1,7 @@
-From 9e08ee8cd6d74cf360075d4e340e4039633f12b2 Mon Sep 17 00:00:00 2001
+From 277168936b37861f016a54c54e8156036409c608 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:39:22 +0100
-Subject: [PATCH 3/7] Set protocol for browser-poc
+Subject: [PATCH 3/8] Set protocol for browser-poc
 
 ---
  recipes-extended/browser-poc/browser-poc_git.bb | 2 +-

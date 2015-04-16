@@ -1,7 +1,7 @@
-From 74d86b931a0f371baa6a906cfefd0195a597aced Mon Sep 17 00:00:00 2001
+From 13dc680175981055b49005496f45fb7bc30c5eca Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:38:41 +0100
-Subject: [PATCH 1/7] Set protocol for genivi-demo-platform-hmi
+Subject: [PATCH 1/8] Set protocol for genivi-demo-platform-hmi
 
 ---
  recipes-demo-hmi/genivi-demo-platform-hmi/genivi-demo-platform-hmi.inc | 2 +-

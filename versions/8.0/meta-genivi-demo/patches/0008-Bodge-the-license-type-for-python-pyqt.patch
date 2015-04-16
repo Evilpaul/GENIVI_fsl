@@ -1,0 +1,25 @@
+From 8d2ea5cca91fda630bac988952aa0af7adec394f Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 17:06:22 +0100
+Subject: [PATCH 8/8] Bodge the license type for python-pyqt
+
+---
+ recipes-devtools/python/python-pyqt_5.3.1.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-devtools/python/python-pyqt_5.3.1.bb b/recipes-devtools/python/python-pyqt_5.3.1.bb
+index b6148ba..d96e479 100644
+--- a/recipes-devtools/python/python-pyqt_5.3.1.bb
++++ b/recipes-devtools/python/python-pyqt_5.3.1.bb
+@@ -2,7 +2,7 @@ SUMMARY = "Python Qt5 Bindings"
+ HOMEPAGE = "http://riverbankcomputing.co.uk"
+ AUTHOR = "Phil Thomson @ riverbank.co.uk"
+ SECTION = "devel/python"
+-LICENSE = "GPLv3"
++LICENSE = "GPLv2"
+ LIC_FILES_CHKSUM = "\
+     file://LICENSE;md5=027a10affabd63483e5a6ef03ed8590a \
+ "
+-- 
+2.1.4
+

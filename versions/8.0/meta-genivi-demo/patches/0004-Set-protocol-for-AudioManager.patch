@@ -1,7 +1,7 @@
-From c8d41da17b1eb51106880cd74323c4b52bb57ff7 Mon Sep 17 00:00:00 2001
+From 89a45a1c4422872ba82c3bccae0577dc7fd5ef90 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:39:37 +0100
-Subject: [PATCH 4/7] Set protocol for AudioManager
+Subject: [PATCH 4/8] Set protocol for AudioManager
 
 ---
  recipes-multimedia/audiomanager/audiomanager-demo_1.2.bb | 2 +-

@@ -1,7 +1,7 @@
-From c0621775e72baea5deed1de9a0353c13c28e328a Mon Sep 17 00:00:00 2001
+From e065ccff19458719eeacc0ebc82e226c244ee0a7 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:40:05 +0100
-Subject: [PATCH 6/7] Set protocol for navigation
+Subject: [PATCH 6/8] Set protocol for navigation
 
 ---
  recipes-navigation/navigation-service/navigation-service_git.bb | 2 +-

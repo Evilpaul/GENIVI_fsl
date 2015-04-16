@@ -1,7 +1,7 @@
-From 111a651102a1148cc6fd2d5c57a69fdbe5034418 Mon Sep 17 00:00:00 2001
+From 962fc16f53a168885e2b16bc3ac58f4354298187 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:39:07 +0100
-Subject: [PATCH 2/7] Set protocol for automotive-message-broker
+Subject: [PATCH 2/8] Set protocol for automotive-message-broker
 
 ---
  .../automotive-message-broker/automotive-message-broker_git.bb          | 2 +-

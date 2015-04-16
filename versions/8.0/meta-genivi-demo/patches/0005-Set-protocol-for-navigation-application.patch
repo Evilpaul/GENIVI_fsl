@@ -1,7 +1,7 @@
-From 17456c0b5b814ef9f54a00daaec5ef3a703e60f9 Mon Sep 17 00:00:00 2001
+From 34ceebd011f83958e56e58bd6b76381ee93c66c8 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:39:53 +0100
-Subject: [PATCH 5/7] Set protocol for navigation-application
+Subject: [PATCH 5/8] Set protocol for navigation-application
 
 ---
  recipes-navigation/navigation-application/navigation-application_git.bb | 2 +-
