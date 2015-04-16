@@ -1,7 +1,7 @@
-From 545273dec59be1e858e96b4abb6fd698a84ebb3c Mon Sep 17 00:00:00 2001
+From de2a9fcc798d02171f9254c75e40d0567f911617 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:48:12 +0100
-Subject: [PATCH 07/10] Set protocol for persistence-common-object
+Subject: [PATCH 07/13] Set protocol for persistence-common-object
 
 ---
  .../persistence-common-object/persistence-common-object_7.0.bb          | 2 +-

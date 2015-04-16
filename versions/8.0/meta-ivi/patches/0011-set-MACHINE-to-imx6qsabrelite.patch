@@ -1,0 +1,24 @@
+From 926e98703656de012c412099569b1c3523ad431e Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 17:00:06 +0100
+Subject: [PATCH 11/13] set MACHINE to imx6qsabrelite
+
+---
+ meta-ivi/conf/local.conf.sample | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/meta-ivi/conf/local.conf.sample b/meta-ivi/conf/local.conf.sample
+index 1187cce..808fd21 100644
+--- a/meta-ivi/conf/local.conf.sample
++++ b/meta-ivi/conf/local.conf.sample
+@@ -20,6 +20,7 @@
+ #MACHINE ?= "qemux86"
+ #MACHINE ?= "qemux86-64"
+ #MACHINE ?= "vexpressa9"
++MACHINE ?= "imx6qsabrelite"
+ #
+ # There are also the following hardware board target machines included for 
+ # demonstration purposes:
+-- 
+2.1.4
+

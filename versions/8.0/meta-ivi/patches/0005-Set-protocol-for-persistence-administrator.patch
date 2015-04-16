@@ -1,7 +1,7 @@
-From c116c258f9fcb07a0125c98afa1d390dc4ef1739 Mon Sep 17 00:00:00 2001
+From 49dba3a48af729923c2721a935baf913e22f1b3b Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:47:38 +0100
-Subject: [PATCH 05/10] Set protocol for persistence-administrator
+Subject: [PATCH 05/13] Set protocol for persistence-administrator
 
 ---
  .../persistence-administrator/persistence-administrator_git.bb          | 2 +-

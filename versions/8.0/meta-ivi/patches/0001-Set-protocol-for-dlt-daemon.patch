@@ -1,7 +1,7 @@
-From b28a7f0e167562a7ad4fa0e585bf46ebbe2f33c6 Mon Sep 17 00:00:00 2001
+From 44cdf2a380a9ea3e9bb9bdea54fb7c08dc4b3bcb Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:43:44 +0100
-Subject: [PATCH 01/10] Set protocol for dlt-daemon
+Subject: [PATCH 01/13] Set protocol for dlt-daemon
 
 ---
  meta-ivi/recipes-extended/dlt-daemon/dlt-daemon_2.11.1.bb | 2 +-

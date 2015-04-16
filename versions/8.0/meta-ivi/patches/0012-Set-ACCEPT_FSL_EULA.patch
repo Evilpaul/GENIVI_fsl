@@ -1,0 +1,22 @@
+From 0a08fd77d29112883acdccdb29a34868e9fa2865 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 17:00:19 +0100
+Subject: [PATCH 12/13] Set ACCEPT_FSL_EULA
+
+---
+ meta-ivi/conf/local.conf.sample | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/meta-ivi/conf/local.conf.sample b/meta-ivi/conf/local.conf.sample
+index 808fd21..7f97d7f 100644
+--- a/meta-ivi/conf/local.conf.sample
++++ b/meta-ivi/conf/local.conf.sample
+@@ -221,3 +221,5 @@ ASSUME_PROVIDED += "libsdl-native"
+ # track the version of this file when it was generated. This can safely be ignored if
+ # this doesn't mean anything to you.
+ CONF_VERSION = "1"
++
++ACCEPT_FSL_EULA = "1"
+-- 
+2.1.4
+

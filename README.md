@@ -14,19 +14,7 @@ Build Genivi 7.0.3 p1 with Wayland IVI Extension
 
 	source poky/oe-init-build-env
 
-3. Add meta-fsl-arm, meta-fsl-arm-extra, meta-fsl-ivi and meta-qt5 layer
-   dependency paths to COREBASE/build/conf/bblayers.conf in BBLAYERS
-   variable. For building the GENIVI demo image the layers
-   meta-openembedded/meta-ruby and meta-genivi-demo will also be required.
-
-4. Set MACHINE ?= "imx6qsabrelite" in COREBASE/build/conf/local.conf
-
-5. Accept End User License Agrement to use prebuilt GPU binaries
-   add in COREBASE/build/conf/local.conf
-
-	ACCEPT_FSL_EULA = "1"
-
-6. Build image including GENIVI 7.0.3 P1 components and Wayland backend
+3. Build image including GENIVI 7.0.3 P1 components and Wayland backend
 
 	bitbake intrepid-image
 

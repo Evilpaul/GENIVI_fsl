@@ -1,0 +1,31 @@
+From 10605ddc1d52019086d27bb5b30d61961291412c Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 17:00:37 +0100
+Subject: [PATCH 13/13] Add extra layers
+
+---
+ meta-ivi/conf/bblayers.conf.sample | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/meta-ivi/conf/bblayers.conf.sample b/meta-ivi/conf/bblayers.conf.sample
+index 1c57ab6..ca2978b 100644
+--- a/meta-ivi/conf/bblayers.conf.sample
++++ b/meta-ivi/conf/bblayers.conf.sample
+@@ -10,8 +10,14 @@ BBLAYERS ?= " \
+   ##OEROOT##/meta-yocto \
+   ##OEROOT##/meta-yocto-bsp \
+   ##OEROOT##/../meta-openembedded/meta-oe \
++  ##OEROOT##/../meta-openembedded/meta-ruby \
+   ##OEROOT##/../meta-ivi/meta-ivi \
+   ##OEROOT##/../meta-ivi/meta-ivi-bsp \
++  ##OEROOT##/../meta-fsl-arm \
++  ##OEROOT##/../meta-fsl-arm-extra \
++  ##OEROOT##/../meta-fsl-ivi \
++  ##OEROOT##/../meta-qt5 \
++  ##OEROOT##/../meta-genivi-demo \
+   "
+ BBLAYERS_NON_REMOVABLE ?= " \
+   ##OEROOT##/meta \
+-- 
+2.1.4
+

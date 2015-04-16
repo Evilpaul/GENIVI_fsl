@@ -1,7 +1,7 @@
-From 54add7421158d9e38d2cec1b1b5671ea4669b934 Mon Sep 17 00:00:00 2001
+From e77d65c975ef5edad1326b9bbd7e6c04f707c42e Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:48:49 +0100
-Subject: [PATCH 09/10] Set protocol for AudioManager
+Subject: [PATCH 09/13] Set protocol for AudioManager
 
 ---
  meta-ivi/recipes-multimedia/audiomanager/audiomanager_6.1.bb | 2 +-

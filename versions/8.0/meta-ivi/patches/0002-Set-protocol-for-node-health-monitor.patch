@@ -1,7 +1,7 @@
-From e8214a457975901478bf74a7304f643186ffe9a8 Mon Sep 17 00:00:00 2001
+From 573cac8e6f0b3ed332ab33be674147a2d0ca48b3 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:46:45 +0100
-Subject: [PATCH 02/10] Set protocol for node-health-monitor
+Subject: [PATCH 02/13] Set protocol for node-health-monitor
 
 ---
  .../recipes-extended/node-health-monitor/node-health-monitor_1.3.3.bb   | 2 +-

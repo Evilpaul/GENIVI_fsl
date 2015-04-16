@@ -1,7 +1,7 @@
-From b76c3094a46ce8a23434952905864748e8fdfde3 Mon Sep 17 00:00:00 2001
+From e1c1c884bc4fb2c3db881207afd3795c3ceca442 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:47:54 +0100
-Subject: [PATCH 06/10] Set protocol for persistence-client-library
+Subject: [PATCH 06/13] Set protocol for persistence-client-library
 
 ---
  .../persistence-client-library/persistence-client-library_git.bb        | 2 +-
