@@ -1,0 +1,24 @@
+From ea236ef08eb0832cd3b7da2575f9cf570e889ccc Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:36:44 +0100
+Subject: [PATCH 3/3] Set PREFERRED_VERSION_readline for i.MX6 builds
+
+---
+ conf/machine/nitrogen6x.conf | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/conf/machine/nitrogen6x.conf b/conf/machine/nitrogen6x.conf
+index 6b90730..3be2c58 100644
+--- a/conf/machine/nitrogen6x.conf
++++ b/conf/machine/nitrogen6x.conf
+@@ -44,6 +44,7 @@ KERNEL_IMAGETYPE = "uImage"
+ PREFERRED_PROVIDER_u-boot = "u-boot-boundary"
+ PREFERRED_PROVIDER_virtual/kernel ?= "linux-boundary"
+ PREFERRED_VERSION_linux-boundary ?= "3.10.17"
++PREFERRED_VERSION_readline ?= "5.2"
+ 
+ # Use SPI NOR U-Boot by default
+ IMAGE_BOOTLOADER ?= ""
+-- 
+2.1.4
+

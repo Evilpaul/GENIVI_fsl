@@ -1,0 +1,25 @@
+From c0621775e72baea5deed1de9a0353c13c28e328a Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:40:05 +0100
+Subject: [PATCH 6/7] Set protocol for navigation
+
+---
+ recipes-navigation/navigation-service/navigation-service_git.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-navigation/navigation-service/navigation-service_git.bb b/recipes-navigation/navigation-service/navigation-service_git.bb
+index 4d11f88..48cdeae 100644
+--- a/recipes-navigation/navigation-service/navigation-service_git.bb
++++ b/recipes-navigation/navigation-service/navigation-service_git.bb
+@@ -2,7 +2,7 @@ SUMMARY = "Navigation software based on Navit and compliant with the Navigation
+ SRCREV = "9953bcd40cb4185eaaad1c15c486dd6220253990"
+ PV = "1"
+ 
+-SRC_URI = "git://git.projects.genivi.org/lbs/navigation.git \
++SRC_URI = "git://git.projects.genivi.org/lbs/navigation.git;protocol=http \
+            file://change_xml_generation_dir.patch \
+            file://navit_genivi_mapviewer.xml \
+            file://navit_genivi_navigationcore.xml \
+-- 
+2.1.4
+

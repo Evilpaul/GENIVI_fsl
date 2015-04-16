@@ -1,0 +1,23 @@
+From 74d86b931a0f371baa6a906cfefd0195a597aced Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:38:41 +0100
+Subject: [PATCH 1/7] Set protocol for genivi-demo-platform-hmi
+
+---
+ recipes-demo-hmi/genivi-demo-platform-hmi/genivi-demo-platform-hmi.inc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-demo-hmi/genivi-demo-platform-hmi/genivi-demo-platform-hmi.inc b/recipes-demo-hmi/genivi-demo-platform-hmi/genivi-demo-platform-hmi.inc
+index 39539b4..0252550 100644
+--- a/recipes-demo-hmi/genivi-demo-platform-hmi/genivi-demo-platform-hmi.inc
++++ b/recipes-demo-hmi/genivi-demo-platform-hmi/genivi-demo-platform-hmi.inc
+@@ -5,5 +5,5 @@ HOMEPAGE = "http://projects.genivi.org/genivi-demo-platform/"
+ LICENSE  = "MPL-2.0"
+ LIC_FILES_CHKSUM = "file://LICENSE;md5=815ca599c9df247a0c7f619bab123dad"
+ 
+-SRC_URI = "git://git.projects.genivi.org/genivi-demo-platform-hmi.git"
++SRC_URI = "git://git.projects.genivi.org/genivi-demo-platform-hmi.git;protocol=http"
+ SRCREV  = "3955d0dd4a544577f812854ef333ddb80dbc177f"
+-- 
+2.1.4
+

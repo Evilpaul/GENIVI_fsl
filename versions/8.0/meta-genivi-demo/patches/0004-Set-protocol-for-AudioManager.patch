@@ -1,0 +1,25 @@
+From c8d41da17b1eb51106880cd74323c4b52bb57ff7 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:39:37 +0100
+Subject: [PATCH 4/7] Set protocol for AudioManager
+
+---
+ recipes-multimedia/audiomanager/audiomanager-demo_1.2.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-multimedia/audiomanager/audiomanager-demo_1.2.bb b/recipes-multimedia/audiomanager/audiomanager-demo_1.2.bb
+index 40dd7fa..0d33882 100644
+--- a/recipes-multimedia/audiomanager/audiomanager-demo_1.2.bb
++++ b/recipes-multimedia/audiomanager/audiomanager-demo_1.2.bb
+@@ -10,7 +10,7 @@ BRANCH = "Intreprid_stable_branch"
+ VERSION = "6.1"
+ 
+ SRC_URI = "\
+-    git://git.projects.genivi.org/AudioManager.git;branch=${BRANCH};tag=${VERSION} \
++    git://git.projects.genivi.org/AudioManager.git;branch=${BRANCH};tag=${VERSION};protocol=http \
+     file://0001-AudioManagerPoC-GENIVI-Alliance-Audio-Manager-proof-.patch \
+     file://0002-AudioManagerPoC-add-support-for-Wayland-ivi-shell.patch \
+     file://AudioManager_PoC.service \
+-- 
+2.1.4
+

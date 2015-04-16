@@ -1,0 +1,25 @@
+From 17456c0b5b814ef9f54a00daaec5ef3a703e60f9 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:39:53 +0100
+Subject: [PATCH 5/7] Set protocol for navigation-application
+
+---
+ recipes-navigation/navigation-application/navigation-application_git.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-navigation/navigation-application/navigation-application_git.bb b/recipes-navigation/navigation-application/navigation-application_git.bb
+index d94ea7f..2b1bd2f 100644
+--- a/recipes-navigation/navigation-application/navigation-application_git.bb
++++ b/recipes-navigation/navigation-application/navigation-application_git.bb
+@@ -9,7 +9,7 @@ PV = "1"
+ DEPENDS = "automotive-message-broker navit navigation-service qtbase qtdeclarative"
+ RDEPENDS_${PN} = "qtquickcontrols-qmlplugins"
+ 
+-SRC_URI = "git://git.projects.genivi.org/lbs/navigation-application.git \
++SRC_URI = "git://git.projects.genivi.org/lbs/navigation-application.git;protocol=http \
+            file://remove_amb_link_path.patch \
+            file://logreplayerconfig \
+            file://pregenerated_images_and_style_sheets_1024x768.tar.bz2 \
+-- 
+2.1.4
+

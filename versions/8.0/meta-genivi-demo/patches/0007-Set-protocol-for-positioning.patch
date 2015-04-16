@@ -1,0 +1,25 @@
+From 5bf17c4f2c435384688bbfe4c1f1d69f7ad204d8 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:40:22 +0100
+Subject: [PATCH 7/7] Set protocol for positioning
+
+---
+ recipes-navigation/positioning/positioning_git.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-navigation/positioning/positioning_git.bb b/recipes-navigation/positioning/positioning_git.bb
+index 3d17303..baf60f4 100644
+--- a/recipes-navigation/positioning/positioning_git.bb
++++ b/recipes-navigation/positioning/positioning_git.bb
+@@ -34,7 +34,7 @@ LICENSE_${PN}-sns = "MPLv2"
+ LICENSE_${PN}-repl = "MPLv2"
+ LICENSE_${PN}-enhpos = "MPLv2"
+ 
+-SRC_URI = "git://git.projects.genivi.org/lbs/positioning.git;protocol=git"
++SRC_URI = "git://git.projects.genivi.org/lbs/positioning.git;protocol=http"
+ SRCREV = "fde1a780f531389d5a05e3b0486c98ad34df3dcb"
+ LIC_FILES_CHKSUM = "file://LICENSE;md5=e73ca6874051c79a99d065bc57849af5"
+ 
+-- 
+2.1.4
+

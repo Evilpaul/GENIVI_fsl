@@ -1,0 +1,25 @@
+From 111a651102a1148cc6fd2d5c57a69fdbe5034418 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:39:07 +0100
+Subject: [PATCH 2/7] Set protocol for automotive-message-broker
+
+---
+ .../automotive-message-broker/automotive-message-broker_git.bb          | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-extended/automotive-message-broker/automotive-message-broker_git.bb b/recipes-extended/automotive-message-broker/automotive-message-broker_git.bb
+index 2542417..cfa03a8 100644
+--- a/recipes-extended/automotive-message-broker/automotive-message-broker_git.bb
++++ b/recipes-extended/automotive-message-broker/automotive-message-broker_git.bb
+@@ -12,7 +12,7 @@ PV = "0.12+git${SRCPV}"
+ 
+ DEPENDS = "glib-2.0 util-linux sqlite3 qtbase boost json-c libtool gpsd"
+ 
+-SRC_URI = "git://github.com/otcshare/automotive-message-broker.git"
++SRC_URI = "git://github.com/otcshare/automotive-message-broker.git;protocol=http"
+ SRCREV = "ac3fe53327a13afc571efe079a31a0472ea285a3"
+ 
+ SRC_URI += "file://amb_allow_sessionbus.patch \
+-- 
+2.1.4
+

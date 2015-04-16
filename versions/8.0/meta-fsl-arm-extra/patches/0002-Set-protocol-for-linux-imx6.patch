@@ -1,7 +1,7 @@
-From 071866fc89e0e449704b2670ebb6d65c4a918174 Mon Sep 17 00:00:00 2001
+From 60a7cb2c1ba330b8e47ae182637d68835ee158b5 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 9 Apr 2015 10:53:40 +0100
-Subject: [PATCH 2/2] Set protocol for linux-imx6
+Subject: [PATCH 2/3] Set protocol for linux-imx6
 
 ---
  recipes-kernel/linux/linux-boundary_3.10.17.bb | 2 +-

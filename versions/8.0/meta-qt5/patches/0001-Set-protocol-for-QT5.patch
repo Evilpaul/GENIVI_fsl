@@ -1,0 +1,25 @@
+From ed17555b28ef9c56a3ded2123d246c4c455bac98 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:42:42 +0100
+Subject: [PATCH] Set protocol for QT5
+
+---
+ recipes-qt/qt5/qt5-git.inc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-qt/qt5/qt5-git.inc b/recipes-qt/qt5/qt5-git.inc
+index 4f8fa98..31fd2d7 100644
+--- a/recipes-qt/qt5/qt5-git.inc
++++ b/recipes-qt/qt5/qt5-git.inc
+@@ -5,7 +5,7 @@ QT_MODULE_BRANCH ?= "5.4"
+ 
+ # each module needs to define valid SRCREV
+ SRC_URI += " \
+-    git://qt.gitorious.org/qt/${QT_MODULE}.git;branch=${QT_MODULE_BRANCH} \
++    git://qt.gitorious.org/qt/${QT_MODULE}.git;branch=${QT_MODULE_BRANCH};protocol=http \
+ "
+ 
+ S = "${WORKDIR}/git"
+-- 
+2.1.4
+

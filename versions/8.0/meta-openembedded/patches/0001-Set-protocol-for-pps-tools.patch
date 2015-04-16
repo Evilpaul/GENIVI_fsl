@@ -1,0 +1,25 @@
+From bacc7b9f4fc527190f6eac0dc4d217ef7fa0f195 Mon Sep 17 00:00:00 2001
+From: Paul Young <p.young@denso-sales.co.uk>
+Date: Thu, 16 Apr 2015 13:41:34 +0100
+Subject: [PATCH] Set protocol for pps-tools
+
+---
+ meta-oe/recipes-support/pps-tools/pps-tools_git.bb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meta-oe/recipes-support/pps-tools/pps-tools_git.bb b/meta-oe/recipes-support/pps-tools/pps-tools_git.bb
+index 73c46ee..98f4a3a 100644
+--- a/meta-oe/recipes-support/pps-tools/pps-tools_git.bb
++++ b/meta-oe/recipes-support/pps-tools/pps-tools_git.bb
+@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
+ 
+ PV = "0.0.0+git${SRCPV}"
+ SRCREV = "0deb9c7e135e9380a6d09e9d2e938a146bb698c8"
+-SRC_URI = "git://github.com/ago/pps-tools.git"
++SRC_URI = "git://github.com/ago/pps-tools.git;protocol=http"
+ 
+ S = "${WORKDIR}/git"
+ 
+-- 
+2.1.4
+
