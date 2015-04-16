@@ -8,7 +8,7 @@ Build Genivi 7.0.3 p1 with Wayland IVI Extension
 =====================================================
 
 1. Export TEMPLATECONF to pick up correct configuration for the build
-export TEMPLATECONF=/full/path/to/meta-ivi/meta-ivi/conf
+	export TEMPLATECONF=/full/path/to/meta-ivi/meta-ivi/conf
 
 2. Source oe-init-build-env
 
