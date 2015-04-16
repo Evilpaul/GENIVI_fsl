@@ -16,7 +16,8 @@ Build Genivi 7.0.3 p1 with Wayland IVI Extension
 
 3. Add meta-fsl-arm, meta-fsl-arm-extra, meta-fsl-ivi and meta-qt5 layer
    dependency paths to COREBASE/build/conf/bblayers.conf in BBLAYERS
-   variable.
+   variable. For building the GENIVI demo image the layers
+   meta-openembedded/meta-ruby and meta-genivi-demo will also be required.
 
 4. Set MACHINE ?= "imx6qsabrelite" in COREBASE/build/conf/local.conf
 
