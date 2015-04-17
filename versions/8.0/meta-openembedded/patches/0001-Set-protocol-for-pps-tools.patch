@@ -1,7 +1,7 @@
-From bacc7b9f4fc527190f6eac0dc4d217ef7fa0f195 Mon Sep 17 00:00:00 2001
+From dea78d7367f304cdf606a3d2f753b2fb62c97b83 Mon Sep 17 00:00:00 2001
 From: Paul Young <p.young@denso-sales.co.uk>
 Date: Thu, 16 Apr 2015 13:41:34 +0100
-Subject: [PATCH] Set protocol for pps-tools
+Subject: [PATCH 1/2] Set protocol for pps-tools
 
 ---
  meta-oe/recipes-support/pps-tools/pps-tools_git.bb | 2 +-
